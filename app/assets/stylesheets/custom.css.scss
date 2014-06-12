@@ -1,6 +1,12 @@
 @import "bootstrap";
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic);
 /* universal */
+$royalPink: #e96c6c;
+$rubyRed: #c3171e;
+$grayMediumLight: #eaeaea;
+$grayLight: #999;
+$gray: #555;
+$grayDarker: #222;
 
 html {
   overflow-y: scroll;
@@ -21,10 +27,9 @@ textarea {
 
 .center {
   text-align: center;
-}
-
-.center h1 {
-  margin-bottom: 10px;
+  h1 {
+    margin-bottom: 10px;
+  }
 }
 
 /* typography */
@@ -39,11 +44,10 @@ h1 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: 100;
+  .jumbotron &{
+  	font-size: 6em;
+  }
 }
-
-.jumbotron h1{
-	font-size: 6em;
-}	
 
 h2 {
   font-size: 1.3em;
@@ -51,7 +55,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #999;
+  color: $grayLight;
 }
 
 p {
@@ -65,16 +69,15 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #e96c6c;
+  color: $royalPink;
   text-transform: uppercase;
   letter-spacing: -1px;
   font-weight: bolder;
   line-height: 1;
-}
-
-#logo:hover {
-  color: #c3171e;
-  text-decoration: none;
+  &:hover {
+    color: $rubyRed;
+    text-decoration: none;
+  }
 }
 
 /* footer */
@@ -82,28 +85,23 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #999;
-}
-
-footer a {
-  color: #555;
-}
-
-footer a:hover {
-  color: #222;
-}
-
-footer small {
-  float: left;
-}
-
-footer ul {
-  float: right;
-  list-style: none;
-}
-
-footer ul li {
-  float: left;
-  margin-left: 10px;
+  border-top: 1px solid $grayMediumLight;
+  color: $grayLight;
+  a {
+    color: $gray;
+    &:hover {
+      color: $grayDarker;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
 }

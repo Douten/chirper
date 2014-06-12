@@ -163,6 +163,6 @@ DEPENDENCIES
   sdoc (= 0.3.20)
   selenium-webdriver (= 2.35.1)
   spork-rails (= 4.0.0)
-  sprockets (~> 2.8, <= 2.11.0)
+  sprockets (<= 2.11.0)
   turbolinks (= 1.1.1)
   uglifier (= 2.1.1)
